@@ -8,6 +8,7 @@ export default function GameInfo({ idGame }) {
     async function test(idGame) {
         // const res = await fetch("https://api.rawg.io/api/games/" + idGame + "?key=06731f222b1c40d4bbfd91e8cd035cf8");
         // const gameInfo = await res.json();
+        // console.log(gameInfo)
         // setGameInfos(gameInfo);
     }
 
