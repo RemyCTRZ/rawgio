@@ -8,7 +8,7 @@ export default function GenresList({ setIdGenre }) {
     const [allGenres, setAllGenres] = useState([]);
 
     const fetchAllGenres = async () => {
-        const res = await fetch("https://api.rawg.io/api/genres?key=06731f222b1c40d4bbfd91e8cd035cf8");
+        const res = await fetch("https://api.rawg.io/api/genres?key=9943bbe07108462187f0614ab2052a21");
         const allGenres = await res.json();
         setAllGenres(allGenres.results);
     };

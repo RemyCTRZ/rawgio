@@ -11,8 +11,8 @@ export default function Magasin({ setIdGenre, idGenre, setIdGame, idGame }) {
     const fetchAllGames = async () => {
 
         const GenreClick = idGenre == 0 ?
-            await fetch("https://api.rawg.io/api/games?key=06731f222b1c40d4bbfd91e8cd035cf8") :
-            await fetch("https://api.rawg.io/api/games?key=06731f222b1c40d4bbfd91e8cd035cf8&genres=" + idGenre);
+            await fetch("https://api.rawg.io/api/games?key=9943bbe07108462187f0614ab2052a21") :
+            await fetch("https://api.rawg.io/api/games?key=9943bbe07108462187f0614ab2052a21&genres=" + idGenre);
         const allGames = await GenreClick.json();
         setAllGames(allGames.results);
     };
